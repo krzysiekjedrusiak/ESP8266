@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.krzysztofjdrusiak.altodom.MainActivity"
+    android:weightSum="1">
+
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/greentech_32"
+        android:id="@+id/imageButtonLight"
+        android:onClick="onNextClickBtnLight"
+        android:layout_weight="0.06"
+        android:elevation="6dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="27dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Ogrzewanie"
+        android:id="@+id/textView"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/imageButtonHeat"
+        android:layout_alignLeft="@+id/imageButtonHeat"
+        android:layout_alignStart="@+id/imageButtonHeat" />
+
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/heating_room_32"
+        android:id="@+id/imageButtonHeat"
+        android:onClick="onNextClickBtnHeat"
+        android:layout_weight="0.06"
+        android:elevation="6dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_alignTop="@+id/imageButtonLight"
+        android:layout_toRightOf="@+id/imageButtonLight"
+        android:layout_toEndOf="@+id/imageButtonLight" />
+
+    <TextView
+        android:text="Oświetlenie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButtonLight"
+        android:layout_alignLeft="@+id/imageButtonLight"
+        android:layout_alignStart="@+id/imageButtonLight"
+        android:id="@+id/textView2" />
+
+</RelativeLayout>

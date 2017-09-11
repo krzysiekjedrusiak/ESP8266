@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_piec"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.krzysztofjdrusiak.altodom.PiecActivity"
+    android:forceHasOverlappingRendering="false"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:text="..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="30dp"
+        android:layout_y="40dp"
+        android:id="@+id/textViewTemperatura"
+        android:textSize="18dp" />
+
+    <TextView
+        android:text="..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/textViewTemperaturaOgrzewania"
+        android:textSize="16dp"
+        android:layout_x="30dp"
+        android:layout_y="100dp"
+         />
+
+    <TextView
+        android:text="OGRZEWANIE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewOg"
+        android:textSize="20dp"
+
+        android:layout_x="200dp"
+        android:layout_y="232dp" />
+
+    <TextView
+        android:text="AUTOMATYCZNE OGRZEWANIE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+
+        android:layout_x="132dp"
+        android:layout_y="453dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_autorenew_black_24dp"
+
+
+        android:id="@+id/imageButtonOdswiez"
+        android:onClick="onNextClickOdswiez"
+        android:elevation="8dp"
+        android:adjustViewBounds="true"
+        android:layout_x="456dp"
+        android:layout_y="92dp" />
+
+    <TextView
+        android:text="..."
+        android:textColorHint="@color/HintColor"
+        android:layout_width="wrap_content"
+        android:id="@+id/textViewStrona"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="194dp"
+        android:layout_x="401dp"
+        android:layout_y="55dp" />
+
+    <Button
+        android:text="WŁĄCZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonOgrzON"
+        android:onClick="onNextClickBtnOgrzON"
+        android:layout_x="238dp"
+        android:layout_y="285dp"
+        android:elevation="10dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_restore_black_48dp"
+        android:layout_x="91dp"
+        android:layout_y="656dp"
+        android:id="@+id/imageButton2"
+        android:onClick="onNextClickBack"
+        android:elevation="15dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/rfid_signal_24"
+        android:layout_x="457dp"
+        android:layout_y="22dp"
+        android:id="@+id/imageView" />
+
+    <Button
+        android:text="WYŁĄCZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonOgrzOFF"
+        android:onClick="onNextClickBtnOgrzOFF"
+
+        android:layout_x="234dp"
+        android:layout_y="381dp"
+        android:elevation="10dp" />
+
+    <Button
+        android:text="Wyslij"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonWyslij"
+        android:onClick="onNextClickBtnWyslij"
+        android:layout_x="233dp"
+        android:layout_y="577dp"
+        android:elevation="10dp" />
+
+    <EditText
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="... °C"
+        android:textColorHint="@color/HintColor"
+        android:textAlignment="center"
+        android:text=""
+        android:ems="10"
+        android:id="@+id/editTextTemp"
+
+        android:layout_x="242dp"
+        android:layout_y="531dp"
+        android:selectAllOnFocus="false" />
+
+    <TextView
+        android:text="..."
+        android:textSize="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="444dp"
+        android:layout_y="453dp"
+        android:id="@+id/textViewAuto" />
+
+    <TextView
+        android:text="..."
+        android:textSize="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="355dp"
+        android:layout_y="231dp"
+        android:id="@+id/textViewOgrzewanie" />
+
+
+</AbsoluteLayout>
